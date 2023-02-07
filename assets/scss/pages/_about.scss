@@ -1,0 +1,38 @@
+.about-page{
+    background-image: url(../image/bg_4.jpg.webp);
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    .overlay{
+        @include overLay();
+        background: #232429;
+        opacity: 0.5;
+    }
+       
+        .aboutLinks{
+            position: absolute;
+            bottom: 22%;
+            left: 99px;
+            display: flex;
+            z-index: 2;
+            gap: 10px;
+            li{
+                @include size(20px,500,normal,'roboto');
+                color: $whiteColor;
+                i{
+                    margin-left: 5px;
+                }
+            }
+        }
+        .title{
+            position: absolute;
+            bottom: 8%;
+            left: 96px;
+            z-index: 2;
+           .basicTitle{
+            @include size(40px,500,normal,'roboto');
+            color: $whiteColor;
+           }
+        }
+}

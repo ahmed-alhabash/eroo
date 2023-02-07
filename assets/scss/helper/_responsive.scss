@@ -1,0 +1,415 @@
+// media query start
+@media (max-width:768px) {
+    .social{
+        display: none;
+    }
+    
+   .navbar{
+       top: 0px!important;
+       background-color: $altColor!important;
+    }
+    header nav .navbar{
+        position: fixed;
+        width: 100%;
+        z-index: 6;
+    }
+     .navbar-nav {
+        background-color: #1a1a1a;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 74px;
+     }
+     .navbar .navbar-nav .nav-link{
+      transition: 300ms all ease-in-out;
+     }
+     .navbar .navbar-nav .nav-link:hover,
+     .navbar .navbar-nav .nav-link:focus
+     {
+      padding-left: 25px;
+     }
+     .Carousel .carousel .carousel-inner  img{
+        height: 400px;
+     }
+     .Carousel .carousel .carousel-inner .carousel-item .carousel-caption{
+        position: absolute!important;
+     }
+     .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .basicTitle{
+        font-size: 19px;
+     }
+     .Carousel .carousel .carousel-inner{
+        height: 400px;
+     }
+     .Carousel .carousel .carousel-inner .carousel-item .carousel-caption{
+        top: 36%;
+        left: 6%;
+     }
+     .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .mainBtn{
+        padding-top: 2px;
+        display: flex;
+     }
+     .Carousel .carousel .carousel-indicators{
+        display: none;
+     }
+     .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .mainBtn a:first-child,
+     .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .mainBtn a:last-child{
+    padding: 12px 4px;
+    font-size: 12px;
+    text-align: center;
+
+     }
+     .Carousel .overlay{
+        height: 65%;
+     }
+     .Carousel .carousel .carousel-inner .carousel-item .carousel-caption span{
+        font-size: 10px;
+     }
+     .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .decreption{
+        font-size: 12px;
+     }
+    //  skill start
+    .skills .titleAria .mainTitle, .skills .titleAria .JOIN-US .box .join-us-title .description, .JOIN-US .box .join-us-title .skills .titleAria .description{
+            font-size: 27px;
+            width: 100%;
+    }
+    .skills .titleAria .description{
+        padding-left: 5px;
+        font-size: 14px;
+    }
+    .skills .box:hover .move-icon{
+        left: 100px;
+    }
+    .skills .box .text .boxTitle{
+        font-size: 20px;
+        padding-top: 20px;
+        text-align: left;
+    }
+    .skills .box .icon i{
+      justify-content: center;
+    }
+    //  skill end
+    // about start 
+    .title .mainTitle, .title .JOIN-US .box .join-us-title .description, .JOIN-US .box .join-us-title .title .description{
+        font-size: 24px;
+    }
+    .about .title .Experienced{
+        display: none!important;
+    }
+    .portfolio .title .mainTitle{
+      font-size: 15px;
+    }
+    .portfolio .content .showAll{
+      padding: 10px 4px;
+    }
+    .portfolio .galary-project .box .image img{
+      height: 192px;
+    }
+    .portfolio .galary-project .box .overlay-icons .titleLink .mainTitle{
+      font-size: 12px;
+    }
+    .portfolio .galary-project .box .overlay-icons .icons{
+      width: 40px;
+      height: 40px;
+    }
+    // about start
+    // about start
+    .service{
+        height: 456px;
+    }
+    .service .box{
+        position: absolute;
+        top: 15px;
+        left: 0%;
+        width: 100%;
+        display: flex;
+        transform:none;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .service .box .containe{
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 18px;
+    }
+    // about end
+    .JOIN-US .box .join-us-title{
+            top: 22%;
+           left: 8%;
+          transform: translate(0)
+    }
+       //  QUESTION start
+       .QUESTION .accordion .accordion-item .accordion-button h3{
+         font-size: 14px;
+         margin-top: 8px;
+       }
+       .QUESTION .accordion .accordion-item .accordion-body .accordian-list li{
+         font-size: 13px;
+       }
+       .QUESTION .image{
+         margin-top: 25px;
+       }
+       .QUESTION .aria-progress .box-progress .progress span::before,
+       .QUESTION .aria-progress .box-progress h3{
+         font-size: 15px;
+       }
+       .QUESTION .title .mainTitle{
+         font-size: 21px;
+         // padding-bottom:0;
+       }
+       .QUESTION{
+         padding-top:0;
+       }
+       .QUESTION .title .mainTitle{
+         padding-bottom: 0;
+       }
+       .QUESTION .accordion{
+         padding-top: 0;
+       }
+      //  QUESTION end
+      // testimonial start
+      .testimonial {
+         display: none;
+      }
+      // testimonial end
+      .JOIN-US .box .join-us-title .mainTitle, .JOIN-US .box .join-us-title .description{
+         text-align: center;
+      }
+      .JOIN-US .box .join-us-title .mainTitle{
+         font-size: 12px;
+      }
+      .JOIN-US .box .join-us-title form input[type=submit] {
+         width: 34%;
+      }
+      .JOIN-US .box{
+         min-height: 23vh;
+      }
+      footer{
+         overflow: hidden;
+      }
+      footer .footer-logo {
+         padding-bottom: 15px;
+     }
+      footer .social-links{
+         justify-content: center;
+       } 
+       footer .EXPLORE, footer .EXPLORE li{
+         line-height: 28px;
+         margin-top: 20px;
+         font-size: 16px;
+       }
+       footer .copyRight .box P{
+         font-size: 10px;
+       }
+       footer .EXPLORE li a{
+         font-size: 15px;
+       }
+       
+      //  about-page start 
+      .about-page{
+         min-height: 40vh;
+         background-position: 20%;
+      }
+      .about-page .title .basicTitle{
+         font-size: 26px;
+      }
+      .about-page .aboutLinks li {
+         font-size: 16px;
+      }
+      .about-page .aboutLinks{
+         left: 18px;
+      }
+      .about-page .title{   
+      left: 18px;
+      }
+      .serial-number{
+         gap: 0;
+      }
+      //  about-page end 
+      .JOIN-US{
+         padding-top: 30px;
+      }
+      .JOIN-US .box .join-us-title form input[type=text]{
+         height: 37px;
+      }
+      .JOIN-US .box{
+         background-position: 0px 13%;
+      }
+      .post .box-blog .search input{
+         width: 92%;
+      }
+      .post .box .date{
+         bottom: 52%;
+         left: 1px;
+         width: 98%;
+         padding: 6px;
+         font-size: 10px;
+      }
+      .post h3{
+         margin-left: 0;
+      }
+      .post .box .postTitle{
+         padding-top: 25px;
+      }
+      .post .box .postTitle .subtitle{
+         font-size: 14px;
+         text-align: left;
+      }
+      .post .box .postTitle .subtitle, .post .box .postTitle .descriptions {
+         font-size: 11px;
+      }
+
+}
+
+
+@media (min-width:769px) and (max-width:991px){
+   
+    .social{
+        display: none;
+    }
+    
+   .navbar{
+       top: 0px!important;
+       background-color: $altColor!important;
+       
+    }
+    header nav .navbar{
+        position: fixed;
+        width: 100%;
+        z-index: 6;
+    }
+     .navbar-nav {
+        background-color: #1a1a1a;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        padding-left: 42px;
+        top: 74px;
+     }
+     .navbar .navbar-nav .nav-link{
+      transition: 300ms all ease-in-out;
+     }
+     .navbar .navbar-nav .nav-link:hover,
+     .navbar .navbar-nav .nav-link:focus
+     {
+      padding-left: 25px;
+     }
+    .Carousel .carousel .carousel-inner  img{
+        height: 400px;
+     }
+     .Carousel .carousel .carousel-inner .carousel-item .carousel-caption{
+        position: absolute!important;
+     }
+     .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .basicTitle{
+        font-size: 19px;
+     }
+     .Carousel .carousel .carousel-inner{
+        height: 400px;
+     }
+     .Carousel .carousel .carousel-inner .carousel-item .carousel-caption{
+        top: 36%;
+        left: 6%;
+     }
+     .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .mainBtn{
+        padding-top: 2px;
+     }
+     .Carousel .carousel .carousel-indicators{
+        display: none;
+     }
+     .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .mainBtn a:first-child,
+     .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .mainBtn a:last-child{
+    padding: 12px 4px;
+    font-size: 12px;
+    text-align: center;
+
+     }
+     .Carousel .overlay{
+        height: 65%;
+     }
+     .Carousel .carousel .carousel-inner .carousel-item .carousel-caption span{
+        font-size: 10px;
+     }
+     .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .decreption{
+        font-size: 12px;
+     }
+     .service{
+        height: 456px;
+    }
+    .service .box{
+        position: absolute;
+        top: 42px;
+        left: 0%;
+        width: 100%;
+        display: flex;
+        transform:none;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .service .box .containe{
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 18px;
+    }
+      //  QUESTION start
+      .QUESTION .accordion .accordion-item .accordion-button h3{
+         font-size: 14px;
+         margin-top: 8px;
+       }
+       .QUESTION .accordion .accordion-item .accordion-body .accordian-list li{
+         font-size: 13px;
+       }
+       .QUESTION .image{
+         margin-top: 25px;
+       }
+       .QUESTION .aria-progress .box-progress .progress span::before,
+       .QUESTION .aria-progress .box-progress h3{
+         font-size: 15px;
+       }
+       .QUESTION .title .mainTitle{
+         padding-bottom:0;
+       }
+      //  QUESTION end
+      // ourTeams start
+      .ourTeams .team-card .teamLink .job,
+      .ourTeams .team-card .teamLink .emb-name{
+         font-size: 19px;
+      }
+       // ourTeams end
+             // testimonial start
+      .testimonial {
+         display: none;
+      }
+      // testimonial end
+      // post start
+      .post .box{
+         margin-bottom: 25px;
+      }
+      // post end
+      // JOIN-US start
+      .JOIN-US .box{
+         min-height: 45vh;
+      }
+      .JOIN-US .box .join-us-title{
+         top: 25%;
+         left: 17%;
+         transform:translate(0);
+      }
+      .JOIN-US .box .join-us-title .mainTitle, .JOIN-US .box .join-us-title .description{
+         text-align: center;
+      }
+      // JOIN-US end
+      // footer start
+
+      // footer end
+      .post .box .date{
+         bottom: 46%;
+         left: 19px;
+      }
+      .post .box-blog .search input{
+         width: 100%;
+      }
+      .post .box-blog .search i {
+         right: 3%;
+      }
+}
+
+// media query end

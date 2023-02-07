@@ -1,0 +1,95 @@
+.contactPage{
+    padding-top: 5rem;
+        .box{
+            background-color: #fff;
+            .subTitle{
+                @include size(31px,bold,normal,'roboto');
+                padding-bottom: 20px;
+            }
+                .text{
+                    width: 45%;
+                    outline: none;
+                    border: 2px solid #cdb30c;
+                    padding: 8px 28px;
+                    margin-right: 11px;
+                    border-radius: 4px;
+                    margin-bottom: 15px;                
+                }
+                .email{
+                       @extend .text;
+                    
+                }
+                .subject{
+                    width:93%;
+                    @extend .text;
+                }
+                .message{
+                    @extend .subject;
+                    @extend .text;        
+                }
+                ::placeholder{
+                   font-family: 'roboto';
+                }
+                .btnMess{
+                    background: $mainColor;
+                    color: $whiteColor;
+                    font-family: 'roboto';
+                    padding: 12px 19px;
+                    display: inline-block;
+                    margin-bottom: 15px;
+                }
+        }
+        .contactUs{
+            padding: 5px;
+            background-color: #232429;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            h4{
+                @include size(31px,bold,normal,'roboto');
+                color: $whiteColor;
+                text-align: center;
+                padding-bottom: 25px;
+                
+            }
+            .contactBox{
+   
+                .contactMethods{
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    margin-bottom: 30px;
+                    .icon{
+                        margin-left: 30px;
+                     i{
+                        color: $whiteColor;
+                        background-color: rgba(255, 255, 255, 0.1);
+                        @include circle(50px,50px);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 22px;
+                     }
+                    }
+                    .text{
+                        display: flex;
+       
+                        p{
+                            color: $mainColor;
+                            @include size(18px,500,normal,'roboto');
+                           
+
+                        }
+                        span{
+                             @extend p;
+                             color: rgba(255, 255, 255, 0.8);
+                             font-size: 14px;
+                             margin-top: 0;
+                            margin-left: 5px;
+                            font-size: 14px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+}

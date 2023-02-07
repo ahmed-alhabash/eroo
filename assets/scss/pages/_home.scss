@@ -1,0 +1,1105 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
+  
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+::-webkit-scrollbar{
+width: 20px;
+}
+::-webkit-scrollbar-track{
+    background-color: $whiteColor;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $mainColor;
+}
+.social {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+    
+    .contact{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      @include size (13px, 500,normal,'roboto');
+      margin-top: 18px;
+        .box{
+        display: flex;
+    
+        .phone{
+            color: rgba(255, 255, 255, 0.6);
+            span{
+                color: white;
+            }
+          
+        }
+        .email{
+            color: rgba(255, 255, 255, 0.6);
+            span{
+                color: white;
+            }
+        }
+        }
+        .socialMedia{
+            display: flex;
+           gap: 20px;
+          a i{
+            color:$whiteColor!important;
+          }
+        }
+    }
+}
+header{
+
+    nav{
+      position: relative;
+        .navbar{
+            background-color: rgba(255, 255, 255, 0.1);
+            position: absolute;
+            top: 55px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 76px;
+            z-index: 5;
+
+            .logo{
+                @include size(25px, bold,normal,'roboto');
+                color:$whiteColor;
+            }
+            .navbar-toggler{
+                position: relative;
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                border: 2px solid $mainColor;
+                cursor: pointer;
+                span:first-child{
+                    position: absolute;
+                    width: 36px;
+                    height: 3px;
+                    background-color: #cdb30c;
+                    top: 13px;
+                    right: 6px;
+                    transition: all 100ms ease-in-out;
+                }
+                span:nth-child(2){
+                    position: absolute;
+                    width: 35px;
+                    height: 3px;
+                    background-color: #cdb30c;
+                    top: 23px;
+                    right: 7px;
+                    transition: all 300ms ease-in-out;
+                }
+                span:last-child{
+                    position: absolute;
+                    width: 35px;
+                    height: 3px;
+                    background-color: #cdb30c;
+                    top: 34px;
+                    right: 7px;
+                    transition: all 300ms ease-in-out;
+                }
+                &:focus{
+                    box-shadow: none;
+                    
+                }
+            }
+            
+            
+            .nav-item{
+                .nav-link{
+                    color: $whiteColor;
+                    @include size(17px,bold,normal,'roboto');
+                     margin-left: 20px;
+                    
+                }
+            }
+        }
+    }
+}
+.Carousel{
+    .overlay{
+        @include overLay;
+    }
+.carousel{
+.carousel-indicators{
+    justify-content: end;
+}
+.carousel-inner{
+       height: 625px; 
+      position: relative;
+      .carousel-item{
+        .carousel-caption{
+            position: absolute;
+            top: 16%;
+            left: 10%;
+            width: 44%;
+            text-align: left;
+            z-index: 3;
+           
+            span{
+               letter-spacing: 5px;
+               font-size: 17px;
+            }
+            .basicTitle{
+                @include size(61px, bold , normal, 'Roboto');
+            }
+            .decreption{
+               font-size: 17px;
+               font-weight: 300;
+            }
+            .mainBtn{
+                padding-top: 30px;
+                @include size(18px , blod, normal , 'Roboto');
+                a:first-child{
+                    @include button($mainColor,$whiteColor,13px 18px);
+                    margin-right: 10px;
+                }
+                a:last-child{
+                    @include button($whiteColor,$altColor,13px 18px)
+           
+                }
+            }
+        }
+    }
+}
+} 
+} 
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    background-image: none;
+}
+.carousel-indicators [data-bs-target]{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent;
+    z-index: 4;
+    
+}
+.skills{
+    background-image: url(../image/sectionbg.webp);
+    padding-top: 70px;
+    padding-bottom: 50px;
+    .titleAria{
+        color:$whiteColor;
+        .mainTitle{
+             @include size(35px ,bold , normal,'roboto');
+             width: 77%;
+        }
+        .description{
+            color:#ffffff75;
+            width: 90%;
+        }
+    }
+    .box{
+        padding: 30px;
+        background-color: $altColor;
+        margin-bottom: 25px;
+        height: 200px;
+        transition: all 300ms ease-in-out;
+        border-radius: 4px;
+        position: relative;
+        &:hover{
+            background-color: $mainColor;
+        }
+        &:hover .icon i{
+            color: $altColor;
+        }
+        &:hover  .move-icon{
+             opacity: 1;
+             left:180px ;
+        }
+        .icon i{
+            transition: all 300ms ease-in-out;
+            font-size: 40px;
+          color: $mainColor;
+          display: flex;
+          justify-content: end;
+         
+        }
+        .text{
+            color: $whiteColor;
+            .boxTitle{
+                @include size(20px ,400 , normal,'roboto');
+            }
+        }
+        .move-icon{
+            position: absolute;
+            opacity: 0;
+            bottom: -15px;
+            left: 50%;
+            border: 2px solid $mainColor;
+            background-color: $altColor;
+            @include circle(45px,45px);
+            transition: all 500ms ease-in-out;
+
+
+            a > i{
+               @include flex(flex,row,center,center);
+               line-height: 40px;
+               color: $mainColor;
+            }
+        }
+    }
+}
+.about{
+.image{
+    width: 100%;
+    height: 100%;
+    img{
+       width: 100%;
+       height: 100%;
+    }
+}
+.title{
+    .description{
+        line-height: 30px;
+        font-size: 12px;
+        color: rgba(26, 26, 26, 0.7019607843);
+    }
+    .Experienced{
+        @include button($mainColor,$whiteColor,0px 22px);
+        display: flex;
+        align-items: center;
+        width: 50%;
+        .years{
+            display: flex;
+            flex-direction: column;
+            span{
+                color: white!important
+            }
+        }
+
+        i{
+            @include circle(50px,50px);
+            background-color: $altColor;
+            @include flex(flex,row,center,center);
+            color: yellow;
+    box-shadow: -7px -9px 8px 5px yellow;
+        }
+    }
+
+}
+
+}
+.service{
+    background: url(../image/bg_4.jpg.webp);
+    height: 295px;
+    background-position: 79% 22%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    .overlay{
+        @include overLay;
+        background-color: #232429!important;
+        opacity: 0.8;
+    }
+    .box{
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .containe{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icons
+            {   
+                background-color: #cdb30c;
+                color: #fff;
+                font-size: 38px;
+                padding: 12px 20px;
+                display: inline-block;
+                width: 68px;
+                height: 70px;
+                border-radius: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 20px;
+        }
+            .Achievements{
+                color: $whiteColor;
+                .counter{
+                       text-align: left;
+                }
+                h3{
+                    @include size(18px,500,normal,'roboto');
+                }
+            }
+        }
+}
+}
+.QUESTION{
+    padding-top: 70px;
+    background-color: #f4f5f9;
+    .accordion{
+        padding-top: 30px;
+        .accordion-item{
+            border: none;
+            margin-top: 20px;
+            .accordion-button{
+                box-shadow: 0px 2px 8px -4px rgb(0 0 0 / 21%) ;
+                background: $whiteColor;
+                h3{
+                    @include size(22px,500,normal,'roboto');
+                }
+            &:focus{
+                box-shadow:none;
+            }
+            &:not(.collapsed){
+                background-color: $mainColor;
+                color: $whiteColor;
+            }
+            &:not(.collapsed) .arrow .down{
+                display: block!important;
+                color: $whiteColor;
+                
+            }
+            &.collapsed{
+                color: #000000bd;
+            }
+            &.collapsed  .arrow .right {
+                display: block!important;
+            }
+            &::after{
+                background-image: none;
+            }
+            .arrow{
+                position: absolute;
+                right: 29px;
+                transition: all 300ms ease-in-out;
+                i{
+                    font-size: 22px;
+                 
+                    color: #00000096;
+                }
+            }
+            }
+            .accordion-body{
+                box-shadow: 0px 2px 15px -4px rgb(0 0 0 / 21%);
+                .accordian-list li{
+                    @include size(20px,500,normal,'roboto');
+                    color: #232429a3;
+                }
+            }
+        }
+    }
+    .image{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .title{
+        .mainTitle{
+            padding-top: 30px;
+            padding-bottom: 50px;
+            @include size(35px ,bold , normal,'roboto');
+        }
+    }
+    .aria-progress{
+        .box-progress{
+              margin-bottom: 40px;
+            h3{
+               @include size(18px ,500 ,normal,'roboto' ) 
+            }
+            .progress{
+               height: 10px;
+               overflow: visible;
+                span{
+                      width: 0%;
+                      background-color: $mainColor;
+                      position: relative;
+                      display: block;
+                      transition: 2s all ease-in-out;
+                    &::before{
+                        content: attr(data-porgress);
+                        position: absolute;
+                        top: -40px;
+                        right: -26px;
+                        color: $mainColor;
+                        padding: 5px;
+                        z-index: 3;
+                     @include size(20px,bold,normal,'roboto')
+                    }
+                    &::after{
+                        content:'' ;
+                    }
+                }
+            }
+        }
+    }
+}
+.ourTeams{
+
+        .team-card{
+            position: relative;
+            overflow: hidden;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 1000%;
+                height: 0%;
+                background-color: #cdb30c;
+                transition: 400ms linear all;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 0%;
+                background-color: #cdb30c;
+                transition: 400ms linear all;
+            }
+            .image{
+                width: 100%;
+                img{
+                    width: 100%;
+                    
+                }
+            } 
+            &:hover::before,
+            &:hover::after{
+               height: 50%;
+               opacity: 0.9;
+            }
+            &:hover .teamLink{
+                opacity: 1;
+               
+            }
+            .teamLink{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 4;
+                opacity: 0;
+                transition: 700ms ease-in-out all;
+               .emb-name{
+                   @include size(20px,500,normal,'roboto');
+                   color: $whiteColor;
+               } 
+               .job{
+                @include size(15px,700,normal,'roboto');
+                color: $whiteColor;
+               }
+               .social-links{
+                  cursor: pointer;
+            
+               }
+               .social-links i{
+
+                @include radios(50%);
+                padding: 8px 9px;
+                border: 1px solid $whiteColor;
+                color: $whiteColor;
+                margin-top: 20px;
+
+               }
+
+            }
+        }
+    .swiber-galary{
+        overflow: hidden;
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 17px;
+    // background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    img {
+        display: block;
+        width: 100%;
+        height: 398px;
+        object-fit: cover;
+      }
+  }
+
+
+
+  .swiper-container {
+    width: 100%;
+    height: 481px;
+    margin: 20px auto;
+  }
+
+  .append-buttons {
+    text-align: center;
+    margin-top: 20px;
+    button {
+        display: inline-block;
+        cursor: pointer;
+        border: 1px solid #007aff;
+        color: #007aff;
+        text-decoration: none;
+        padding: 4px 10px;
+        border-radius: 4px;
+        margin: 0 10px;
+        font-size: 13px;
+      }
+  }
+
+  .portfolio{
+    position: relative;
+
+    .overlay{
+        @include overLay();
+        height: 40%;
+        background:$altColor;
+        opacity: 1; 
+        height: 40%;
+        background: #1a1a1a;
+        z-index: -1;
+
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    .title{
+        color: $whiteColor;
+    }
+    .showAll{
+         padding: 10px 20px;
+         border: 2px solid $mainColor;
+         color: $mainColor;
+         &:hover{
+            color: $mainColor;
+         }
+    }
+}
+    .galary-project{
+        .box{
+            overflow: hidden;
+           margin-bottom: 25px;
+           position: relative;
+           &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1000%;
+            height: 0%;
+            background-color: #232429;
+            transition: 400ms linear all;
+            opacity: 0.9;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 0%;
+            background-color: #232429;
+            transition: 400ms linear all;
+            opacity: 0.9;
+        }
+        &:hover::before,
+        &:hover::after{
+         height: 50%;
+        }
+        &:hover  .overlay-icons{
+            opacity: 1;
+        }
+            .image{
+              
+                img{
+                    width: 100%;
+                  height:   340px;
+                }
+            }
+            .overlay-icons{
+                position: absolute;
+                bottom: 10px;
+                left: 18px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 86%;
+                opacity: 0;
+                transition: 500ms ease-in-out all;
+                z-index: 2;
+                .titleLink{
+        
+                    color: $whiteColor;
+                    span{
+                        @include size(16px,bold,normal,'roboto');
+                       color:$mainColor;
+                       
+                    }
+                    .mainTitle{
+                        @include size(25px,bold,normal,'roboto');
+                    }
+                }
+                .icons{
+                      @include circle(45px,45px);
+                    background: $mainColor;
+                    @include flex(flex,column,center,center);
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+  }
+  .testimonial{
+     overflow: hidden;
+     background-color: #f4f5f9 ;
+     .container{
+        overflow: hidden
+     }
+     .testimonialCards{
+        @include flex(flex,column,center,center);
+        background-color: $whiteColor;
+        cursor: grab;
+        padding: 10px;
+        @include radios(5px);
+        margin-right: 15px;
+        gap: 20px;
+        .text{
+            text-align: left;
+            padding-top: 30px;
+            p{
+                color: #1a1a1ac7;
+                @include size(17px,500,normal,'roboto')
+            }
+        }
+        .content{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .image{
+                img{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                }
+            }
+
+            .embTitle{
+                text-align: left;
+                .stars i{
+                    color: $mainColor;
+                    font-size: 14px;
+                 }
+                h3{
+                    font-size: 20px;
+                }
+                h4{
+                    color: $mainColor;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+     }
+  }
+.post{
+    .title{
+        text-align: center;
+    }
+    .box{
+        position: relative;
+        box-shadow: 0px 4px 24px -16px rgb(0 0 0 / 20%);
+        .image{
+            width: 100%;
+            cursor: pointer;
+            img{
+                width: 100%;
+            }
+        }
+        .date{
+            position: absolute;
+            bottom: 44%;
+            left: 29px;
+            width: 84%;
+            padding: 12px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            i{
+                color: $mainColor;
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+            p{
+                margin: 0;
+            }
+        }
+        .postTitle{
+            padding: 10px;
+            padding-top: 50px;
+            .subtitle{
+             @include size(20px,500,normal,'roboto');
+             text-align: center;
+            }
+            .descriptions{
+            text-align: center;
+            @extend .subtitle;
+            color: #1a1a1a62;
+            }
+        }
+
+    }
+    .box-blog{
+        margin-left: 30px;
+        .search{
+            padding-bottom: 40px;
+            position: relative; 
+            input{
+                border: none;
+                padding: 12px 30px;
+                box-shadow: 1px 1px 0px 8px #cccccc61;
+                outline: none;    
+                 
+            }
+            i{
+                position: absolute;
+                right: 29%;
+                top: 16px;
+                color: rgb(204, 204, 204);
+            }
+        }
+        .blog-service{
+            @include size(25px,bold,normal,'roboto');
+            li{
+                @include size(18px,300,normal,'roboto');
+                border-bottom: 1px solid #dee2e6;
+                padding-bottom: 15px;
+                padding-top: 15px;
+            }
+        }
+    }
+    .box-tag{
+        margin-top: 30px;
+        margin-left: 30px;
+        .tag{
+           h3{
+            @include size(25px,bold,normal,'roboto');
+           }
+            li{
+                padding: 5px 10px;
+                border-radius: 4px;
+                color: #000000;
+                border: 1px solid #ccc;
+                font-size: 11px;
+                font-weight: 700;
+                display: inline-block;
+                margin-left: 10px;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+        }
+        .blogText{
+            margin-top: 30px;
+            h4{
+              @include size(25px,bold,normal,'roboto');
+            }
+            P{
+                color: #0000008b;
+                font-size: 17px;
+            }
+        }
+
+    }
+    h3{
+        @include size(25px,bold,normal,'roboto');
+        margin-left: 30px;
+    }
+    .box-img-blog{
+        margin-top: 30px;
+        margin-left: 30px;
+        .image{
+            cursor: pointer;
+            img{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .blog-text{
+            padding-left: 15px;
+            h4{
+            @include size(16px,700,normal,'roboto');
+            cursor: pointer;
+            }
+            .icons{
+                display: flex;
+                align-items: center;
+                @include size(14px,500,normal,'roboto');
+             
+            
+            }
+            i{
+              color: $mainColor;
+              margin-right: 5px;
+              margin-left: 5px;
+              cursor: pointer;
+            }
+            span{
+
+            }
+        }
+    }
+}
+.JOIN-US{
+    overflow: hidden;
+    padding-top: 100px;
+     .box{
+        background: url(../image/bg_4.jpg.webp);
+        min-height: 60vh;
+        background-size: cover;
+        background-position: 0px 34%;
+        position: relative;
+        .overlayImg{
+            @include overLay();
+            opacity: 0.8;
+            background: $mainColor;
+        }
+        .join-us-title{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            z-index: 3;
+            color: $whiteColor;
+            .mainTitle{
+                text-align: center;
+                @include size(35px,500,normal,'roboto')
+            }
+            .description{
+             @extend .mainTitle;
+             font-size: 19px;
+             color: #ffffffd1;
+             text-align: left;
+            }
+            form{
+                display: flex;
+                input[type='text']{
+                    outline: none;
+                   height: 50px;
+                   width: 80%;
+                   border-top-left-radius: 5px;
+                   border-bottom-left-radius: 5px;
+                    border: none;
+                }
+                input[type='submit']{
+                    @extend  input;
+                    width: 25%;
+                    border: 0;
+                    color: $whiteColor;
+                    background-color: $mainColor;
+                    font-family: 'roboto';
+                    font-size: 17px;
+                }
+            }
+        }
+     }
+}
+footer{
+    background-color: #232429;
+    padding-top: 50px;
+    overflow: hidden;
+    .footer-logo{
+        padding-bottom: 30px;
+        a{
+          @include size(25px,500,normal,'roboto');
+          &:hover{
+            color: $mainColor;
+          }
+        }
+
+    }
+    .text p{
+        color: $whiteColor;
+        font-family: 'roboto';
+        width: 78%;
+       }
+    .social-links{
+        padding-top: 15px;
+     display: flex;
+     gap: 20px;
+     a{
+       @include circle (40px , 40px);
+       background-color: $mainColor;
+       color: $whiteColor;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
+    }
+ .EXPLORE{
+    @include size(25px,500,normal,'roboto');
+    color: $whiteColor;
+    line-height: 50px;
+    li{
+        @extend .EXPLORE;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        a{
+            color: rgba(255, 255, 255, 0.7);
+        }
+        i{
+            margin-right: 10px;
+        }
+    }
+ }
+ .QUESTIONS{
+    li{
+        i{
+            color: $mainColor;
+        }
+        a{
+
+        }
+    }
+ }
+ .copyRight{
+    background-color: #1e1f23;
+    .box{
+        padding: 10px 0;
+        color: rgba(255,255,255,.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        P{
+            margin-top: 13px;
+            @include size(18px,500,normal,'roboto')
+        }
+        .Developer{
+            color: $whiteColor;
+        }
+        i{
+            margin-left: 4px;
+            margin-right: 4px;
+            color: red;
+        }
+    }
+ }
+}
+
+
+
+
+//   class inherit
+  .title{
+    padding-top: 50px;
+    span{
+        color: $mainColor;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 40px;
+    }
+    .mainTitle{
+        @include size(35px ,bold , normal,'roboto');    
+        line-height: 50px;
+    }
+}
+.serial-number{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    .num{
+        padding: 8px 16px;
+        background-color: $whiteColor;
+        border: 1px solid #e6e6e6;
+        @include size(18px,500,normal,'roboto');
+        @include radios(5px);
+        cursor: pointer;
+        &:hover{
+         background-color: $altColor;
+         color: $whiteColor;
+        }
+         a{
+            i{
+                color: $mainColor;
+            }
+        }
+    }
+}
+.nav_one{
+    top: 23px!important;
+    right: 6px;
+    transform: rotate(45deg);
+}
+.nav_tow{
+    opacity: 0;
+}
+.nav_three{
+    top: 24px!important;
+    transform: rotate(-45deg);
+}
+.mainColor{
+color: #cdb30c;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus{
+    color:none;
+}
+.sticky{
+    position: fixed!important;
+    top: 0!important;
+    left: 0!important;
+    background: #1a1a1a!important;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    transition: 300ms all ease-in-out;
+    z-index: 10;
+}
+// class inherit

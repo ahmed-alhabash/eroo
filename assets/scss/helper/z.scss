@@ -1,0 +1,127 @@
+// Busic color in framework
+$mainColor:#cdb30c;
+$altColor:#1a1a1a;
+$whiteColor:#fff;
+$overlayColor:#232429;
+$sectowColor:#898989;
+$secThreeColor:#252525;
+$fooColor:#969696;
+// fonts 
+@mixin size($size,$weight,$style,$family){
+font-size: $size;
+font-weight: $weight;
+font-style: $style;
+font-family: $family;
+};
+//flex
+@mixin flex($flex,$dir,$justify,$align, ){
+display: $flex;
+flex-direction: $dir;
+justify-content:$justify ;
+align-items:$align ;
+};
+//grid
+@mixin grid($grid,){
+    display: $grid;
+}
+// before 
+@mixin before($content,$pos:absolute){
+content: $content;
+position: $pos;
+}
+// after
+@mixin after($content,$pos:absolute){
+    content: $content;
+    position: $pos;
+};
+//circle 
+@mixin circle($wid,$hei){
+border-radius: 50%;
+width:$wid;
+height:$hei;
+}
+//radios 
+@mixin radios ($val) {
+    border-radius: $val;
+}
+//hov
+@mixin hov ($background,$color){
+background-color: $background;
+color: $color;
+}
+
+// overLay
+@mixin overLay(){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $overlayColor;
+    z-index: 2;
+    opacity: .2;
+}
+@mixin button($backColor,$color,$padding,){
+    background-color: $backColor;
+    color: $color;
+    padding: $padding;
+    border-radius: 5px;
+    &:hover{
+    @include hov($backColor,$color )
+    }
+}
+// padding
+@mixin padd {
+@content;
+}
+// margin
+@mixin margin {
+@content;
+}
+// prifixer 
+@mixin prefixer($property, $value, $prefixes:()){
+@each $prefix in $prefixes{
+#{'-' + $prefix + '-' + $property} : $value;
+}
+#{$property}:$value
+}
+// animation 
+@mixin keyframes($animation-key){
+    @-webkit-keyframes #{$animation-key}{
+        @content;
+    }
+    @-moz-keyframes #{$animation-key}{
+        @content;
+    }
+    @-o-keyframes #{$animation-key}{
+        @content;
+    }
+}
+// media query
+$media-query:(
+    'xs':0,
+    's': 480px,
+    'md':768px,
+    'lg':991px
+);
+@mixin xs{
+@media (min-width: map-get($media-query,'xs')){
+    @content;
+}
+}
+@mixin s{
+@media (min-width: map-get($media-query,'s')){
+    @content;
+}
+}
+@mixin md{
+@media (min-width: map-get($media-query,'md')){
+    @content;
+}
+}
+@mixin lg{
+@media (min-width: map-get($media-query,'lg')){
+    @content;
+}
+}
+

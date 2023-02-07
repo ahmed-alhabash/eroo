@@ -1,0 +1,1783 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cdb30c;
+}
+
+.social {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+}
+.social .contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+  margin-top: 18px;
+}
+.social .contact .box {
+  display: flex;
+}
+.social .contact .box .phone {
+  color: rgba(255, 255, 255, 0.6);
+}
+.social .contact .box .phone span {
+  color: white;
+}
+.social .contact .box .email {
+  color: rgba(255, 255, 255, 0.6);
+}
+.social .contact .box .email span {
+  color: white;
+}
+.social .contact .socialMedia {
+  display: flex;
+  gap: 20px;
+}
+.social .contact .socialMedia a i {
+  color: #fff !important;
+}
+
+header nav {
+  position: relative;
+}
+header nav .navbar {
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 55px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 76px;
+  z-index: 5;
+}
+header nav .navbar .logo {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "roboto";
+  color: #fff;
+}
+header nav .navbar .navbar-toggler {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #cdb30c;
+  cursor: pointer;
+}
+header nav .navbar .navbar-toggler span:first-child {
+  position: absolute;
+  width: 36px;
+  height: 3px;
+  background-color: #cdb30c;
+  top: 13px;
+  right: 6px;
+  transition: all 100ms ease-in-out;
+}
+header nav .navbar .navbar-toggler span:nth-child(2) {
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  background-color: #cdb30c;
+  top: 23px;
+  right: 7px;
+  transition: all 300ms ease-in-out;
+}
+header nav .navbar .navbar-toggler span:last-child {
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  background-color: #cdb30c;
+  top: 34px;
+  right: 7px;
+  transition: all 300ms ease-in-out;
+}
+header nav .navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+header nav .navbar .nav-item .nav-link {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "roboto";
+  margin-left: 20px;
+}
+
+.Carousel .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #232429;
+  z-index: 2;
+  opacity: 0.2;
+}
+.Carousel .carousel .carousel-indicators {
+  justify-content: end;
+}
+.Carousel .carousel .carousel-inner {
+  height: 625px;
+  position: relative;
+}
+.Carousel .carousel .carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  top: 16%;
+  left: 10%;
+  width: 44%;
+  text-align: left;
+  z-index: 3;
+}
+.Carousel .carousel .carousel-inner .carousel-item .carousel-caption span {
+  letter-spacing: 5px;
+  font-size: 17px;
+}
+.Carousel .carousel .carousel-inner .carousel-item .carousel-caption .basicTitle {
+  font-size: 61px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Roboto";
+}
+.Carousel .carousel .carousel-inner .carousel-item .carousel-caption .decreption {
+  font-size: 17px;
+  font-weight: 300;
+}
+.Carousel .carousel .carousel-inner .carousel-item .carousel-caption .mainBtn {
+  padding-top: 30px;
+  font-size: 18px;
+  font-weight: blod;
+  font-style: normal;
+  font-family: "Roboto";
+}
+.Carousel .carousel .carousel-inner .carousel-item .carousel-caption .mainBtn a:first-child {
+  background-color: #cdb30c;
+  color: #fff;
+  padding: 13px 18px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.Carousel .carousel .carousel-inner .carousel-item .carousel-caption .mainBtn a:first-child:hover {
+  background-color: #cdb30c;
+  color: #fff;
+}
+.Carousel .carousel .carousel-inner .carousel-item .carousel-caption .mainBtn a:last-child {
+  background-color: #fff;
+  color: #1a1a1a;
+  padding: 13px 18px;
+  border-radius: 5px;
+}
+.Carousel .carousel .carousel-inner .carousel-item .carousel-caption .mainBtn a:last-child:hover {
+  background-color: #fff;
+  color: #1a1a1a;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-image: none;
+}
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid transparent;
+  z-index: 4;
+}
+
+.skills {
+  background-image: url(../image/sectionbg.webp);
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+.skills .titleAria {
+  color: #fff;
+}
+.skills .titleAria .mainTitle, .skills .titleAria .JOIN-US .box .join-us-title .description, .JOIN-US .box .join-us-title .skills .titleAria .description {
+  font-size: 35px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "roboto";
+  width: 77%;
+}
+.skills .titleAria .description {
+  color: rgba(255, 255, 255, 0.4588235294);
+  width: 90%;
+}
+.skills .box {
+  padding: 30px;
+  background-color: #1a1a1a;
+  margin-bottom: 25px;
+  height: 200px;
+  transition: all 300ms ease-in-out;
+  border-radius: 4px;
+  position: relative;
+}
+.skills .box:hover {
+  background-color: #cdb30c;
+}
+.skills .box:hover .icon i {
+  color: #1a1a1a;
+}
+.skills .box:hover .move-icon {
+  opacity: 1;
+  left: 180px;
+}
+.skills .box .icon i {
+  transition: all 300ms ease-in-out;
+  font-size: 40px;
+  color: #cdb30c;
+  display: flex;
+  justify-content: end;
+}
+.skills .box .text, .skills .contactPage .box .subject, .skills .contactPage .box .message, .contactPage .skills .box .subject, .contactPage .skills .box .message, .skills .contactPage .box .email, .contactPage .skills .box .email {
+  color: #fff;
+}
+.skills .box .text .boxTitle, .skills .contactPage .box .subject .boxTitle, .skills .contactPage .box .message .boxTitle, .contactPage .skills .box .subject .boxTitle, .contactPage .skills .box .message .boxTitle, .skills .contactPage .box .email .boxTitle, .contactPage .skills .box .email .boxTitle {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "roboto";
+}
+.skills .box .move-icon {
+  position: absolute;
+  opacity: 0;
+  bottom: -15px;
+  left: 50%;
+  border: 2px solid #cdb30c;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  transition: all 500ms ease-in-out;
+}
+.skills .box .move-icon a > i {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  line-height: 40px;
+  color: #cdb30c;
+}
+
+.about .image {
+  width: 100%;
+  height: 100%;
+}
+.about .image img {
+  width: 100%;
+  height: 100%;
+}
+.about .title .description {
+  line-height: 30px;
+  font-size: 12px;
+  color: rgba(26, 26, 26, 0.7019607843);
+}
+.about .title .Experienced {
+  background-color: #cdb30c;
+  color: #fff;
+  padding: 0px 22px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.about .title .Experienced:hover {
+  background-color: #cdb30c;
+  color: #fff;
+}
+.about .title .Experienced .years {
+  display: flex;
+  flex-direction: column;
+}
+.about .title .Experienced .years span {
+  color: white !important;
+}
+.about .title .Experienced i {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  box-shadow: -7px -9px 8px 5px yellow;
+}
+
+.service {
+  background: url(../image/bg_4.jpg.webp);
+  height: 295px;
+  background-position: 79% 22%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.service .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #232429;
+  z-index: 2;
+  opacity: 0.2;
+  background-color: #232429 !important;
+  opacity: 0.8;
+}
+.service .box {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.service .box .containe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service .box .containe .icons {
+  background-color: #cdb30c;
+  color: #fff;
+  font-size: 38px;
+  padding: 12px 20px;
+  display: inline-block;
+  width: 68px;
+  height: 70px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.service .box .containe .Achievements {
+  color: #fff;
+}
+.service .box .containe .Achievements .counter {
+  text-align: left;
+}
+.service .box .containe .Achievements h3 {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+}
+
+.QUESTION {
+  padding-top: 70px;
+  background-color: #f4f5f9;
+}
+.QUESTION .accordion {
+  padding-top: 30px;
+}
+.QUESTION .accordion .accordion-item {
+  border: none;
+  margin-top: 20px;
+}
+.QUESTION .accordion .accordion-item .accordion-button {
+  box-shadow: 0px 2px 8px -4px rgba(0, 0, 0, 0.21);
+  background: #fff;
+}
+.QUESTION .accordion .accordion-item .accordion-button h3 {
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+}
+.QUESTION .accordion .accordion-item .accordion-button:focus {
+  box-shadow: none;
+}
+.QUESTION .accordion .accordion-item .accordion-button:not(.collapsed) {
+  background-color: #cdb30c;
+  color: #fff;
+}
+.QUESTION .accordion .accordion-item .accordion-button:not(.collapsed) .arrow .down {
+  display: block !important;
+  color: #fff;
+}
+.QUESTION .accordion .accordion-item .accordion-button.collapsed {
+  color: rgba(0, 0, 0, 0.7411764706);
+}
+.QUESTION .accordion .accordion-item .accordion-button.collapsed .arrow .right {
+  display: block !important;
+}
+.QUESTION .accordion .accordion-item .accordion-button::after {
+  background-image: none;
+}
+.QUESTION .accordion .accordion-item .accordion-button .arrow {
+  position: absolute;
+  right: 29px;
+  transition: all 300ms ease-in-out;
+}
+.QUESTION .accordion .accordion-item .accordion-button .arrow i {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5882352941);
+}
+.QUESTION .accordion .accordion-item .accordion-body {
+  box-shadow: 0px 2px 15px -4px rgba(0, 0, 0, 0.21);
+}
+.QUESTION .accordion .accordion-item .accordion-body .accordian-list li {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+  color: rgba(35, 36, 41, 0.6392156863);
+}
+.QUESTION .image {
+  width: 100%;
+}
+.QUESTION .image img {
+  width: 100%;
+}
+.QUESTION .title .mainTitle, .QUESTION .title .JOIN-US .box .join-us-title .description, .JOIN-US .box .join-us-title .QUESTION .title .description {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-size: 35px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "roboto";
+}
+.QUESTION .aria-progress .box-progress {
+  margin-bottom: 40px;
+}
+.QUESTION .aria-progress .box-progress h3 {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+}
+.QUESTION .aria-progress .box-progress .progress {
+  height: 10px;
+  overflow: visible;
+}
+.QUESTION .aria-progress .box-progress .progress span {
+  width: 0%;
+  background-color: #cdb30c;
+  position: relative;
+  display: block;
+  transition: 2s all ease-in-out;
+}
+.QUESTION .aria-progress .box-progress .progress span::before {
+  content: attr(data-porgress);
+  position: absolute;
+  top: -40px;
+  right: -26px;
+  color: #cdb30c;
+  padding: 5px;
+  z-index: 3;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "roboto";
+}
+.QUESTION .aria-progress .box-progress .progress span::after {
+  content: "";
+}
+
+.ourTeams .team-card {
+  position: relative;
+  overflow: hidden;
+}
+.ourTeams .team-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000%;
+  height: 0%;
+  background-color: #cdb30c;
+  transition: 400ms linear all;
+}
+.ourTeams .team-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #cdb30c;
+  transition: 400ms linear all;
+}
+.ourTeams .team-card .image {
+  width: 100%;
+}
+.ourTeams .team-card .image img {
+  width: 100%;
+}
+.ourTeams .team-card:hover::before, .ourTeams .team-card:hover::after {
+  height: 50%;
+  opacity: 0.9;
+}
+.ourTeams .team-card:hover .teamLink {
+  opacity: 1;
+}
+.ourTeams .team-card .teamLink {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  opacity: 0;
+  transition: 700ms ease-in-out all;
+}
+.ourTeams .team-card .teamLink .emb-name {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+  color: #fff;
+}
+.ourTeams .team-card .teamLink .job {
+  font-size: 15px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "roboto";
+  color: #fff;
+}
+.ourTeams .team-card .teamLink .social-links {
+  cursor: pointer;
+}
+.ourTeams .team-card .teamLink .social-links i {
+  border-radius: 50%;
+  padding: 8px 9px;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-top: 20px;
+}
+.ourTeams .swiber-galary {
+  overflow: hidden;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 17px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 398px;
+  object-fit: cover;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 481px;
+  margin: 20px auto;
+}
+
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+.append-buttons button {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}
+
+.portfolio {
+  position: relative;
+}
+.portfolio .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #232429;
+  z-index: 2;
+  opacity: 0.2;
+  height: 40%;
+  background: #1a1a1a;
+  opacity: 1;
+  height: 40%;
+  background: #1a1a1a;
+  z-index: -1;
+}
+.portfolio .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.portfolio .content .title {
+  color: #fff;
+}
+.portfolio .content .showAll {
+  padding: 10px 20px;
+  border: 2px solid #cdb30c;
+  color: #cdb30c;
+}
+.portfolio .content .showAll:hover {
+  color: #cdb30c;
+}
+.portfolio .galary-project .box {
+  overflow: hidden;
+  margin-bottom: 25px;
+  position: relative;
+}
+.portfolio .galary-project .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000%;
+  height: 0%;
+  background-color: #232429;
+  transition: 400ms linear all;
+  opacity: 0.9;
+}
+.portfolio .galary-project .box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #232429;
+  transition: 400ms linear all;
+  opacity: 0.9;
+}
+.portfolio .galary-project .box:hover::before, .portfolio .galary-project .box:hover::after {
+  height: 50%;
+}
+.portfolio .galary-project .box:hover .overlay-icons {
+  opacity: 1;
+}
+.portfolio .galary-project .box .image img {
+  width: 100%;
+  height: 340px;
+}
+.portfolio .galary-project .box .overlay-icons {
+  position: absolute;
+  bottom: 10px;
+  left: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 86%;
+  opacity: 0;
+  transition: 500ms ease-in-out all;
+  z-index: 2;
+}
+.portfolio .galary-project .box .overlay-icons .titleLink {
+  color: #fff;
+}
+.portfolio .galary-project .box .overlay-icons .titleLink span {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "roboto";
+  color: #cdb30c;
+}
+.portfolio .galary-project .box .overlay-icons .titleLink .mainTitle, .portfolio .galary-project .JOIN-US .box .overlay-icons .titleLink .join-us-title .description, .JOIN-US .portfolio .galary-project .box .overlay-icons .titleLink .join-us-title .description, .portfolio .galary-project .JOIN-US .box .join-us-title .overlay-icons .titleLink .description, .JOIN-US .portfolio .galary-project .box .join-us-title .overlay-icons .titleLink .description {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "roboto";
+}
+.portfolio .galary-project .box .overlay-icons .icons {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background: #cdb30c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.testimonial {
+  overflow: hidden;
+  background-color: #f4f5f9;
+}
+.testimonial .container {
+  overflow: hidden;
+}
+.testimonial .testimonialCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  cursor: grab;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 15px;
+  gap: 20px;
+}
+.testimonial .testimonialCards .text, .testimonial .testimonialCards .contactPage .box .subject, .testimonial .testimonialCards .contactPage .box .message, .contactPage .box .testimonial .testimonialCards .subject, .contactPage .box .testimonial .testimonialCards .message, .testimonial .testimonialCards .contactPage .box .email, .contactPage .box .testimonial .testimonialCards .email {
+  text-align: left;
+  padding-top: 30px;
+}
+.testimonial .testimonialCards .text p, .testimonial .testimonialCards .contactPage .contactUs .contactBox .contactMethods .text span, .contactPage .contactUs .contactBox .contactMethods .testimonial .testimonialCards .text span, .testimonial .testimonialCards .contactPage .box .subject p, .testimonial .testimonialCards .contactPage .contactUs .contactBox .contactMethods .box .subject span, .testimonial .testimonialCards .contactPage .box .contactUs .contactBox .contactMethods .subject span, .testimonial .testimonialCards .contactPage .box .message p, .testimonial .testimonialCards .contactPage .contactUs .contactBox .contactMethods .box .message span, .testimonial .testimonialCards .contactPage .box .contactUs .contactBox .contactMethods .message span, .contactPage .box .testimonial .testimonialCards .subject p, .contactPage .box .testimonial .testimonialCards .subject .contactUs .contactBox .contactMethods .text span, .contactPage .contactUs .contactBox .contactMethods .box .testimonial .testimonialCards .subject span, .contactPage .box .testimonial .testimonialCards .contactUs .contactBox .contactMethods .subject span, .contactPage .box .contactUs .contactBox .contactMethods .testimonial .testimonialCards .subject span, .contactPage .box .testimonial .testimonialCards .message p, .contactPage .box .testimonial .testimonialCards .message .contactUs .contactBox .contactMethods .text span, .contactPage .contactUs .contactBox .contactMethods .box .testimonial .testimonialCards .message span, .contactPage .box .testimonial .testimonialCards .contactUs .contactBox .contactMethods .message span, .contactPage .box .contactUs .contactBox .contactMethods .testimonial .testimonialCards .message span, .testimonial .testimonialCards .contactPage .box .email p, .testimonial .testimonialCards .contactPage .contactUs .contactBox .contactMethods .box .email span, .testimonial .testimonialCards .contactPage .box .contactUs .contactBox .contactMethods .email span, .contactPage .box .testimonial .testimonialCards .email p, .contactPage .box .testimonial .testimonialCards .email .contactUs .contactBox .contactMethods .text span, .contactPage .contactUs .contactBox .contactMethods .box .testimonial .testimonialCards .email span, .contactPage .box .testimonial .testimonialCards .contactUs .contactBox .contactMethods .email span, .contactPage .box .contactUs .contactBox .contactMethods .testimonial .testimonialCards .email span {
+  color: rgba(26, 26, 26, 0.7803921569);
+  font-size: 17px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+}
+.testimonial .testimonialCards .content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.testimonial .testimonialCards .content .image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.testimonial .testimonialCards .content .embTitle {
+  text-align: left;
+}
+.testimonial .testimonialCards .content .embTitle .stars i {
+  color: #cdb30c;
+  font-size: 14px;
+}
+.testimonial .testimonialCards .content .embTitle h3 {
+  font-size: 20px;
+}
+.testimonial .testimonialCards .content .embTitle h4 {
+  color: #cdb30c;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.post .title {
+  text-align: center;
+}
+.post .box {
+  position: relative;
+  box-shadow: 0px 4px 24px -16px rgba(0, 0, 0, 0.2);
+}
+.post .box .image {
+  width: 100%;
+  cursor: pointer;
+}
+.post .box .image img {
+  width: 100%;
+}
+.post .box .date {
+  position: absolute;
+  bottom: 44%;
+  left: 29px;
+  width: 84%;
+  padding: 12px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.post .box .date i {
+  color: #cdb30c;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.post .box .date p, .post .box .date .contactPage .contactUs .contactBox .contactMethods .text span, .contactPage .contactUs .contactBox .contactMethods .text .post .box .date span, .post .contactPage .contactUs .contactBox .contactMethods .box .date .email span, .contactPage .contactUs .contactBox .contactMethods .post .box .date .email span, .post .contactPage .contactUs .contactBox .contactMethods .box .email .date span, .contactPage .contactUs .contactBox .contactMethods .post .box .email .date span, .post .contactPage .box .date .contactUs .contactBox .contactMethods .email span, .contactPage .post .box .date .contactUs .contactBox .contactMethods .email span, .post .contactPage .box .contactUs .contactBox .contactMethods .email .date span, .contactPage .post .box .contactUs .contactBox .contactMethods .email .date span, .post .contactPage .contactUs .contactBox .contactMethods .box .date .subject span, .contactPage .contactUs .contactBox .contactMethods .post .box .date .subject span, .post .contactPage .contactUs .contactBox .contactMethods .box .subject .date span, .contactPage .contactUs .contactBox .contactMethods .post .box .subject .date span, .post .contactPage .box .date .contactUs .contactBox .contactMethods .subject span, .contactPage .post .box .date .contactUs .contactBox .contactMethods .subject span, .post .contactPage .box .contactUs .contactBox .contactMethods .subject .date span, .contactPage .post .box .contactUs .contactBox .contactMethods .subject .date span, .post .contactPage .contactUs .contactBox .contactMethods .box .date .message span, .contactPage .contactUs .contactBox .contactMethods .post .box .date .message span, .post .contactPage .contactUs .contactBox .contactMethods .box .message .date span, .contactPage .contactUs .contactBox .contactMethods .post .box .message .date span, .post .contactPage .box .date .contactUs .contactBox .contactMethods .message span, .contactPage .post .box .date .contactUs .contactBox .contactMethods .message span, .post .contactPage .box .contactUs .contactBox .contactMethods .message .date span, .contactPage .post .box .contactUs .contactBox .contactMethods .message .date span {
+  margin: 0;
+}
+.post .box .postTitle {
+  padding: 10px;
+  padding-top: 50px;
+}
+.post .box .postTitle .subtitle, .post .box .postTitle .descriptions {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+  text-align: center;
+}
+.post .box .postTitle .descriptions {
+  text-align: center;
+  color: rgba(26, 26, 26, 0.3843137255);
+}
+.post .box-blog {
+  margin-left: 30px;
+}
+.post .box-blog .search {
+  padding-bottom: 40px;
+  position: relative;
+}
+.post .box-blog .search input, .post .box-blog .search .JOIN-US .box .join-us-title form input[type=submit], .JOIN-US .box .join-us-title form .post .box-blog .search input[type=submit] {
+  border: none;
+  padding: 12px 30px;
+  box-shadow: 1px 1px 0px 8px rgba(204, 204, 204, 0.3803921569);
+  outline: none;
+}
+.post .box-blog .search i {
+  position: absolute;
+  right: 29%;
+  top: 16px;
+  color: rgb(204, 204, 204);
+}
+.post .box-blog .blog-service {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "roboto";
+}
+.post .box-blog .blog-service li {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-family: "roboto";
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.post .box-tag {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.post .box-tag .tag h3 {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "roboto";
+}
+.post .box-tag .tag li {
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #000000;
+  border: 1px solid #ccc;
+  font-size: 11px;
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.post .box-tag .blogText {
+  margin-top: 30px;
+}
+.post .box-tag .blogText h4 {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "roboto";
+}
+.post .box-tag .blogText P {
+  color: rgba(0, 0, 0, 0.5450980392);
+  font-size: 17px;
+}
+.post h3 {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "roboto";
+  margin-left: 30px;
+}
+.post .box-img-blog {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.post .box-img-blog .image {
+  cursor: pointer;
+}
+.post .box-img-blog .image img {
+  width: 80px;
+  height: 80px;
+}
+.post .box-img-blog .blog-text {
+  padding-left: 15px;
+}
+.post .box-img-blog .blog-text h4 {
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "roboto";
+  cursor: pointer;
+}
+.post .box-img-blog .blog-text .icons {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+}
+.post .box-img-blog .blog-text i {
+  color: #cdb30c;
+  margin-right: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.JOIN-US {
+  overflow: hidden;
+  padding-top: 100px;
+}
+.JOIN-US .box {
+  background: url(../image/bg_4.jpg.webp);
+  min-height: 60vh;
+  background-size: cover;
+  background-position: 0px 34%;
+  position: relative;
+}
+.JOIN-US .box .overlayImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #232429;
+  z-index: 2;
+  opacity: 0.2;
+  opacity: 0.8;
+  background: #cdb30c;
+}
+.JOIN-US .box .join-us-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  color: #fff;
+}
+.JOIN-US .box .join-us-title .mainTitle, .JOIN-US .box .join-us-title .description {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+}
+.JOIN-US .box .join-us-title .description {
+  font-size: 19px;
+  color: rgba(255, 255, 255, 0.8196078431);
+  text-align: left;
+}
+.JOIN-US .box .join-us-title form {
+  display: flex;
+}
+.JOIN-US .box .join-us-title form input[type=text] {
+  outline: none;
+  height: 50px;
+  width: 80%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+}
+.JOIN-US .box .join-us-title form input[type=submit] {
+  width: 25%;
+  border: 0;
+  color: #fff;
+  background-color: #cdb30c;
+  font-family: "roboto";
+  font-size: 17px;
+}
+
+footer {
+  background-color: #232429;
+  padding-top: 50px;
+  overflow: hidden;
+}
+footer .footer-logo {
+  padding-bottom: 30px;
+}
+footer .footer-logo a {
+  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+}
+footer .footer-logo a:hover {
+  color: #cdb30c;
+}
+footer .text p, footer .contactPage .contactUs .contactBox .contactMethods .text span, .contactPage .contactUs .contactBox .contactMethods footer .text span, footer .contactPage .box .subject p, footer .contactPage .contactUs .contactBox .contactMethods .box .subject span, footer .contactPage .box .contactUs .contactBox .contactMethods .subject span, footer .contactPage .box .message p, footer .contactPage .contactUs .contactBox .contactMethods .box .message span, footer .contactPage .box .contactUs .contactBox .contactMethods .message span, .contactPage .box footer .subject p, .contactPage .box footer .subject .contactUs .contactBox .contactMethods .text span, .contactPage .contactUs .contactBox .contactMethods .box footer .subject span, .contactPage .box footer .contactUs .contactBox .contactMethods .subject span, .contactPage .box .contactUs .contactBox .contactMethods footer .subject span, .contactPage .box footer .message p, .contactPage .box footer .message .contactUs .contactBox .contactMethods .text span, .contactPage .contactUs .contactBox .contactMethods .box footer .message span, .contactPage .box footer .contactUs .contactBox .contactMethods .message span, .contactPage .box .contactUs .contactBox .contactMethods footer .message span, footer .contactPage .box .email p, footer .contactPage .contactUs .contactBox .contactMethods .box .email span, footer .contactPage .box .contactUs .contactBox .contactMethods .email span, .contactPage .box footer .email p, .contactPage .box footer .email .contactUs .contactBox .contactMethods .text span, .contactPage .contactUs .contactBox .contactMethods .box footer .email span, .contactPage .box footer .contactUs .contactBox .contactMethods .email span, .contactPage .box .contactUs .contactBox .contactMethods footer .email span {
+  color: #fff;
+  font-family: "roboto";
+  width: 78%;
+}
+footer .social-links {
+  padding-top: 15px;
+  display: flex;
+  gap: 20px;
+}
+footer .social-links a {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #cdb30c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .EXPLORE, footer .EXPLORE li {
+  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+  color: #fff;
+  line-height: 50px;
+}
+footer .EXPLORE li {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+footer .EXPLORE li a {
+  color: rgba(255, 255, 255, 0.7);
+}
+footer .EXPLORE li i {
+  margin-right: 10px;
+}
+footer .QUESTIONS li i {
+  color: #cdb30c;
+}
+footer .copyRight {
+  background-color: #1e1f23;
+}
+footer .copyRight .box {
+  padding: 10px 0;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .copyRight .box P {
+  margin-top: 13px;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+}
+footer .copyRight .box .Developer {
+  color: #fff;
+}
+footer .copyRight .box i {
+  margin-left: 4px;
+  margin-right: 4px;
+  color: red;
+}
+
+.title {
+  padding-top: 50px;
+}
+.title span {
+  color: #cdb30c;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 40px;
+}
+.title .mainTitle, .title .JOIN-US .box .join-us-title .description, .JOIN-US .box .join-us-title .title .description {
+  font-size: 35px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "roboto";
+  line-height: 50px;
+}
+
+.serial-number {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.serial-number .num {
+  padding: 8px 16px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+  border-radius: 5px;
+  cursor: pointer;
+}
+.serial-number .num:hover {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+.serial-number .num a i {
+  color: #cdb30c;
+}
+
+.nav_one {
+  top: 23px !important;
+  right: 6px;
+  transform: rotate(45deg);
+}
+
+.nav_tow {
+  opacity: 0;
+}
+
+.nav_three {
+  top: 24px !important;
+  transform: rotate(-45deg);
+}
+
+.mainColor {
+  color: #cdb30c;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: none;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  background: #1a1a1a !important;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  transition: 300ms all ease-in-out;
+  z-index: 10;
+}
+
+.about-page {
+  background-image: url(../image/bg_4.jpg.webp);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.about-page .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #232429;
+  z-index: 2;
+  opacity: 0.2;
+  background: #232429;
+  opacity: 0.5;
+}
+.about-page .aboutLinks {
+  position: absolute;
+  bottom: 22%;
+  left: 99px;
+  display: flex;
+  z-index: 2;
+  gap: 10px;
+}
+.about-page .aboutLinks li {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+  color: #fff;
+}
+.about-page .aboutLinks li i {
+  margin-left: 5px;
+}
+.about-page .title {
+  position: absolute;
+  bottom: 8%;
+  left: 96px;
+  z-index: 2;
+}
+.about-page .title .basicTitle {
+  font-size: 40px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+  color: #fff;
+}
+
+.pricing {
+  background-color: #f4f5f9;
+  padding-bottom: 50px;
+}
+.pricing .box {
+  background-color: white !important;
+  box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+.pricing .box:hover .box-footer {
+  box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
+}
+.pricing .box .price-list {
+  padding: 10px;
+}
+.pricing .box .price-list li {
+  padding-bottom: 15px;
+}
+.pricing .box .price-list li i {
+  padding: 5px;
+  font-size: 10px;
+  background-color: #cdb30c;
+  border-radius: 50%;
+  color: #fff;
+  margin-right: 10px;
+}
+.pricing .box .box-footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-left: 15px;
+  background-color: #f4f5f9;
+}
+.pricing .box .box-footer .price-num {
+  width: 50%;
+}
+.pricing .box .box-footer .price-num P:first-child {
+  font-size: 23px;
+  font-weight: bold;
+}
+.pricing .box .box-footer .price-num P:nth-child(2) {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "roboto";
+}
+.pricing .box .box-footer .price-num P:last-child {
+  font-weight: 500;
+  font-family: "roboto";
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.pricing .box .box-footer .btn a {
+  width: 50%;
+  background-color: #cdb30c;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+}
+.pricing .scale {
+  transform: scale(10px);
+}
+
+.contactPage {
+  padding-top: 5rem;
+}
+.contactPage .box {
+  background-color: #fff;
+}
+.contactPage .box .subTitle {
+  font-size: 31px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "roboto";
+  padding-bottom: 20px;
+}
+.contactPage .box .text, .contactPage .box .subject, .contactPage .box .message, .contactPage .box .email {
+  width: 45%;
+  outline: none;
+  border: 2px solid #cdb30c;
+  padding: 8px 28px;
+  margin-right: 11px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.contactPage .box .subject, .contactPage .box .message {
+  width: 93%;
+}
+.contactPage .box ::placeholder {
+  font-family: "roboto";
+}
+.contactPage .box .btnMess {
+  background: #cdb30c;
+  color: #fff;
+  font-family: "roboto";
+  padding: 12px 19px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.contactPage .contactUs {
+  padding: 5px;
+  background-color: #232429;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.contactPage .contactUs h4 {
+  font-size: 31px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "roboto";
+  color: #fff;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.contactPage .contactUs .contactBox .contactMethods {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.contactPage .contactUs .contactBox .contactMethods .icon {
+  margin-left: 30px;
+}
+.contactPage .contactUs .contactBox .contactMethods .icon i {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+.contactPage .contactUs .contactBox .contactMethods .text, .contactPage .contactUs .contactBox .contactMethods .box .email, .contactPage .box .contactUs .contactBox .contactMethods .email, .contactPage .contactUs .contactBox .contactMethods .box .subject, .contactPage .box .contactUs .contactBox .contactMethods .subject, .contactPage .contactUs .contactBox .contactMethods .box .message, .contactPage .box .contactUs .contactBox .contactMethods .message {
+  display: flex;
+}
+.contactPage .contactUs .contactBox .contactMethods .text p, .contactPage .contactUs .contactBox .contactMethods .text span, .contactPage .contactUs .contactBox .contactMethods .box .email p, .contactPage .contactUs .contactBox .contactMethods .box .email span, .contactPage .box .contactUs .contactBox .contactMethods .email p, .contactPage .box .contactUs .contactBox .contactMethods .email span, .contactPage .contactUs .contactBox .contactMethods .box .subject p, .contactPage .contactUs .contactBox .contactMethods .box .subject span, .contactPage .box .contactUs .contactBox .contactMethods .subject p, .contactPage .box .contactUs .contactBox .contactMethods .subject span, .contactPage .contactUs .contactBox .contactMethods .box .message p, .contactPage .contactUs .contactBox .contactMethods .box .message span, .contactPage .box .contactUs .contactBox .contactMethods .message p, .contactPage .box .contactUs .contactBox .contactMethods .message span {
+  color: #cdb30c;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "roboto";
+}
+.contactPage .contactUs .contactBox .contactMethods .text span, .contactPage .contactUs .contactBox .contactMethods .box .email span, .contactPage .box .contactUs .contactBox .contactMethods .email span, .contactPage .contactUs .contactBox .contactMethods .box .subject span, .contactPage .box .contactUs .contactBox .contactMethods .subject span, .contactPage .contactUs .contactBox .contactMethods .box .message span, .contactPage .box .contactUs .contactBox .contactMethods .message span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  margin-top: 0;
+  margin-left: 5px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .social {
+    display: none;
+  }
+  .navbar {
+    top: 0px !important;
+    background-color: #1a1a1a !important;
+  }
+  header nav .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+  }
+  .navbar-nav {
+    background-color: #1a1a1a;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 74px;
+  }
+  .navbar .navbar-nav .nav-link {
+    transition: 300ms all ease-in-out;
+  }
+  .navbar .navbar-nav .nav-link:hover,
+  .navbar .navbar-nav .nav-link:focus {
+    padding-left: 25px;
+  }
+  .Carousel .carousel .carousel-inner img {
+    height: 400px;
+  }
+  .Carousel .carousel .carousel-inner .carousel-item .carousel-caption {
+    position: absolute !important;
+  }
+  .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .basicTitle {
+    font-size: 19px;
+  }
+  .Carousel .carousel .carousel-inner {
+    height: 400px;
+  }
+  .Carousel .carousel .carousel-inner .carousel-item .carousel-caption {
+    top: 36%;
+    left: 6%;
+  }
+  .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .mainBtn {
+    padding-top: 2px;
+    display: flex;
+  }
+  .Carousel .carousel .carousel-indicators {
+    display: none;
+  }
+  .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .mainBtn a:first-child,
+  .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .mainBtn a:last-child {
+    padding: 12px 4px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .Carousel .overlay {
+    height: 65%;
+  }
+  .Carousel .carousel .carousel-inner .carousel-item .carousel-caption span {
+    font-size: 10px;
+  }
+  .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .decreption {
+    font-size: 12px;
+  }
+  .skills .titleAria .mainTitle, .skills .titleAria .JOIN-US .box .join-us-title .description, .JOIN-US .box .join-us-title .skills .titleAria .description {
+    font-size: 27px;
+    width: 100%;
+  }
+  .skills .titleAria .description {
+    padding-left: 5px;
+    font-size: 14px;
+  }
+  .skills .box:hover .move-icon {
+    left: 100px;
+  }
+  .skills .box .text .boxTitle, .skills .contactPage .box .email .boxTitle, .contactPage .skills .box .email .boxTitle, .skills .contactPage .box .subject .boxTitle, .contactPage .skills .box .subject .boxTitle, .skills .contactPage .box .message .boxTitle, .contactPage .skills .box .message .boxTitle {
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: left;
+  }
+  .skills .box .icon i {
+    justify-content: center;
+  }
+  .title .mainTitle, .title .JOIN-US .box .join-us-title .description, .JOIN-US .box .join-us-title .title .description {
+    font-size: 24px;
+  }
+  .about .title .Experienced {
+    display: none !important;
+  }
+  .portfolio .title .mainTitle, .portfolio .title .JOIN-US .box .join-us-title .description, .JOIN-US .box .join-us-title .portfolio .title .description {
+    font-size: 15px;
+  }
+  .portfolio .content .showAll {
+    padding: 10px 4px;
+  }
+  .portfolio .galary-project .box .image img {
+    height: 192px;
+  }
+  .portfolio .galary-project .box .overlay-icons .titleLink .mainTitle, .portfolio .galary-project .JOIN-US .box .overlay-icons .titleLink .join-us-title .description, .JOIN-US .portfolio .galary-project .box .overlay-icons .titleLink .join-us-title .description, .portfolio .galary-project .JOIN-US .box .join-us-title .overlay-icons .titleLink .description, .JOIN-US .portfolio .galary-project .box .join-us-title .overlay-icons .titleLink .description {
+    font-size: 12px;
+  }
+  .portfolio .galary-project .box .overlay-icons .icons {
+    width: 40px;
+    height: 40px;
+  }
+  .service {
+    height: 456px;
+  }
+  .service .box {
+    position: absolute;
+    top: 15px;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    transform: none;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .service .box .containe {
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  .JOIN-US .box .join-us-title {
+    top: 22%;
+    left: 8%;
+    transform: translate(0);
+  }
+  .QUESTION .accordion .accordion-item .accordion-button h3 {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .QUESTION .accordion .accordion-item .accordion-body .accordian-list li {
+    font-size: 13px;
+  }
+  .QUESTION .image {
+    margin-top: 25px;
+  }
+  .QUESTION .aria-progress .box-progress .progress span::before,
+  .QUESTION .aria-progress .box-progress h3 {
+    font-size: 15px;
+  }
+  .QUESTION .title .mainTitle, .QUESTION .title .JOIN-US .box .join-us-title .description, .JOIN-US .box .join-us-title .QUESTION .title .description {
+    font-size: 21px;
+  }
+  .QUESTION {
+    padding-top: 0;
+  }
+  .QUESTION .title .mainTitle, .QUESTION .title .JOIN-US .box .join-us-title .description, .JOIN-US .box .join-us-title .QUESTION .title .description {
+    padding-bottom: 0;
+  }
+  .QUESTION .accordion {
+    padding-top: 0;
+  }
+  .testimonial {
+    display: none;
+  }
+  .JOIN-US .box .join-us-title .mainTitle, .JOIN-US .box .join-us-title .description {
+    text-align: center;
+  }
+  .JOIN-US .box .join-us-title .mainTitle, .JOIN-US .box .join-us-title .description {
+    font-size: 12px;
+  }
+  .JOIN-US .box .join-us-title form input[type=submit] {
+    width: 34%;
+  }
+  .JOIN-US .box {
+    min-height: 23vh;
+  }
+  footer {
+    overflow: hidden;
+  }
+  footer .footer-logo {
+    padding-bottom: 15px;
+  }
+  footer .social-links {
+    justify-content: center;
+  }
+  footer .EXPLORE, footer .EXPLORE li {
+    line-height: 28px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  footer .copyRight .box P {
+    font-size: 10px;
+  }
+  footer .EXPLORE li a {
+    font-size: 15px;
+  }
+  .about-page {
+    min-height: 40vh;
+    background-position: 20%;
+  }
+  .about-page .title .basicTitle {
+    font-size: 26px;
+  }
+  .about-page .aboutLinks li {
+    font-size: 16px;
+  }
+  .about-page .aboutLinks {
+    left: 18px;
+  }
+  .about-page .title {
+    left: 18px;
+  }
+  .serial-number {
+    gap: 0;
+  }
+  .JOIN-US {
+    padding-top: 30px;
+  }
+  .JOIN-US .box .join-us-title form input[type=text] {
+    height: 37px;
+  }
+  .JOIN-US .box {
+    background-position: 0px 13%;
+  }
+  .post .box-blog .search input, .post .box-blog .search .JOIN-US .box .join-us-title form input[type=submit], .JOIN-US .box .join-us-title form .post .box-blog .search input[type=submit] {
+    width: 92%;
+  }
+  .post .box .date {
+    bottom: 52%;
+    left: 1px;
+    width: 98%;
+    padding: 6px;
+    font-size: 10px;
+  }
+  .post h3 {
+    margin-left: 0;
+  }
+  .post .box .postTitle {
+    padding-top: 25px;
+  }
+  .post .box .postTitle .subtitle, .post .box .postTitle .descriptions {
+    font-size: 14px;
+    text-align: left;
+  }
+  .post .box .postTitle .subtitle, .post .box .postTitle .descriptions {
+    font-size: 11px;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .social {
+    display: none;
+  }
+  .navbar {
+    top: 0px !important;
+    background-color: #1a1a1a !important;
+  }
+  header nav .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+  }
+  .navbar-nav {
+    background-color: #1a1a1a;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding-left: 42px;
+    top: 74px;
+  }
+  .navbar .navbar-nav .nav-link {
+    transition: 300ms all ease-in-out;
+  }
+  .navbar .navbar-nav .nav-link:hover,
+  .navbar .navbar-nav .nav-link:focus {
+    padding-left: 25px;
+  }
+  .Carousel .carousel .carousel-inner img {
+    height: 400px;
+  }
+  .Carousel .carousel .carousel-inner .carousel-item .carousel-caption {
+    position: absolute !important;
+  }
+  .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .basicTitle {
+    font-size: 19px;
+  }
+  .Carousel .carousel .carousel-inner {
+    height: 400px;
+  }
+  .Carousel .carousel .carousel-inner .carousel-item .carousel-caption {
+    top: 36%;
+    left: 6%;
+  }
+  .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .mainBtn {
+    padding-top: 2px;
+  }
+  .Carousel .carousel .carousel-indicators {
+    display: none;
+  }
+  .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .mainBtn a:first-child,
+  .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .mainBtn a:last-child {
+    padding: 12px 4px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .Carousel .overlay {
+    height: 65%;
+  }
+  .Carousel .carousel .carousel-inner .carousel-item .carousel-caption span {
+    font-size: 10px;
+  }
+  .Carousel .carousel .carousel-inner .carousel-item .carousel-caption .decreption {
+    font-size: 12px;
+  }
+  .service {
+    height: 456px;
+  }
+  .service .box {
+    position: absolute;
+    top: 42px;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    transform: none;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .service .box .containe {
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  .QUESTION .accordion .accordion-item .accordion-button h3 {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .QUESTION .accordion .accordion-item .accordion-body .accordian-list li {
+    font-size: 13px;
+  }
+  .QUESTION .image {
+    margin-top: 25px;
+  }
+  .QUESTION .aria-progress .box-progress .progress span::before,
+  .QUESTION .aria-progress .box-progress h3 {
+    font-size: 15px;
+  }
+  .QUESTION .title .mainTitle, .QUESTION .title .JOIN-US .box .join-us-title .description, .JOIN-US .box .join-us-title .QUESTION .title .description {
+    padding-bottom: 0;
+  }
+  .ourTeams .team-card .teamLink .job,
+  .ourTeams .team-card .teamLink .emb-name {
+    font-size: 19px;
+  }
+  .testimonial {
+    display: none;
+  }
+  .post .box {
+    margin-bottom: 25px;
+  }
+  .JOIN-US .box {
+    min-height: 45vh;
+  }
+  .JOIN-US .box .join-us-title {
+    top: 25%;
+    left: 17%;
+    transform: translate(0);
+  }
+  .JOIN-US .box .join-us-title .mainTitle, .JOIN-US .box .join-us-title .description {
+    text-align: center;
+  }
+  .post .box .date {
+    bottom: 46%;
+    left: 19px;
+  }
+  .post .box-blog .search input, .post .box-blog .search .JOIN-US .box .join-us-title form input[type=submit], .JOIN-US .box .join-us-title form .post .box-blog .search input[type=submit] {
+    width: 100%;
+  }
+  .post .box-blog .search i {
+    right: 3%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
